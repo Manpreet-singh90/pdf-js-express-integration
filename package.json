@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pdftron/pdfjs-express": "^8.7.3",
+    "@pdftron/pdfjs-express-viewer": "^8.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

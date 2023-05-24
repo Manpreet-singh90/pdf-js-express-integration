@@ -8,7 +8,7 @@ const PdfJsExpress = () => {
   useEffect(() => {
     WebViewer(
       {
-        path: "/webviewer/lib",
+        path: "/webviewer/lib", 
         initialDoc: "/files/dummy.pdf",
         // licenseKey: 'VMeLR5MsW5lX3X9YfqQF',
       },
@@ -16,10 +16,10 @@ const PdfJsExpress = () => {
     ).then((instance: any) => {
       console.log(" Result ", instance);
     });
-  }, []);
+  }, []); 
 
   return (
-    <div className="MyComponent">
+    <div className="MyComponent"> 
       <div className="header">React sample</div>
       <div className="webviewer" ref={viewer}></div>
     </div>

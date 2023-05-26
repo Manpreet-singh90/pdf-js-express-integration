@@ -4,7 +4,6 @@ import WebViewer from "@pdftron/pdfjs-express-viewer";
 
 const PdfJsExpress = () => {
   const viewer = useRef(null);
-
   useEffect(() => {
     WebViewer(
       {
@@ -40,7 +39,7 @@ const PdfJsExpress = () => {
             fontFamily: "sans-serif",
             color: "red",
             opacity: 50, // from 0 to 100
-            text: "Just for testing",
+            text: "MultiM3D",
           },
 
           // Draw header watermark
@@ -64,11 +63,14 @@ const PdfJsExpress = () => {
       });
     });
   }, []);
-
   return (
     <div>
       <div className="MyComponent">
-        <div className="webviewer" ref={viewer} style={{}}></div>
+        <div
+          className="webviewer"
+          ref={viewer}
+          style={{ height: "100vh", width: "800px" }}
+        ></div>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@ const PdfJsExpress = () => {
             fontFamily: "sans-serif",
             color: "red",
             opacity: 50, // from 0 to 100
-            text: "MultiM3D",
+            text: "Just for practice",
           },
 
           // Draw header watermark

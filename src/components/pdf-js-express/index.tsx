@@ -9,6 +9,7 @@ const PdfJsExpress = () => {
       {
         path: "node_modules/@pdftron/pdfjs-express/public",
         initialDoc: "/src/assets/pdf/sample.pdf",
+        
       },
       viewer.current
     ).then((instance: any) => {
@@ -35,15 +36,18 @@ const PdfJsExpress = () => {
         documentViewer.setWatermark({
           // Draw diagonal watermark in middle of the document
           diagonal: {
+
             fontSize: 25, // or even smaller size
             fontFamily: "sans-serif",
             color: "red",
             opacity: 50, // from 0 to 100
             text: "Just for practice",
+
           },
 
           // Draw header watermark
-          header: {
+          header: { 
+
             fontSize: 10,
             fontFamily: "sans-serif",
             color: "red",
@@ -52,6 +56,7 @@ const PdfJsExpress = () => {
             center: "center watermark",
             right: "",
           },
+
         });
 
         //Delete comment Icon
